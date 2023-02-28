@@ -20,20 +20,23 @@ public class Person {
     private final Phone phone;
     private final Email email;
 
+
     // Data fields
     private final Address address;
+    private Remark remark;
     private final Set<Tag> tags = new HashSet<>();
 
     /**
      * Constructor for backward compatibility
      * Might be removed in the future.
      */
-    public Person(Name name, Phone phone, Email email, Address address, Set<Tag> tags) {
+    public Person(Name name, Phone phone, Email email, Address address, Remark remark, Set<Tag> tags) {
         requireAllNonNull(name, phone, email, address, tags);
         this.name = name;
         this.phone = phone;
         this.email = email;
         this.address = address;
+        this.remark = remark;
         this.tags.addAll(tags);
     }
 
@@ -96,6 +99,9 @@ public class Person {
         return otherPerson != null
                 && otherPerson.getName().equals(getName());
     }
+    public Remark getRemark() {
+        return remark;
+    }
 
     /**
      * Returns true if both persons have the same identity and data fields.
@@ -134,7 +140,9 @@ public class Person {
                 .append("; Email: ")
                 .append(getEmail())
                 .append("; Address: ")
-                .append(getAddress());
+                .append(getAddress())
+                .append(" Remark: ")
+                .append(getRemark());
 
         Set<Tag> tags = getTags();
         if (!tags.isEmpty()) {
