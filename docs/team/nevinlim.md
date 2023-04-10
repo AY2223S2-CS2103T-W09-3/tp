@@ -6,7 +6,7 @@
 ***CareFlow*** can get your patient and drugs management tasks done **faster** than traditional applications.
 
 ## <ins>Code contributed: </ins>
-* RepoSense Link: [here](https://nus-cs2103-ay2223s2.github.io/tp-dashboard/?search=nevinlim&breakdown=true&sort=groupTitle&sortWithin=title&since=2023-02-17&timeframe=commit&mergegroup=&groupSelect=groupByRepos&checkedFileTypes=docs~functional-code~test-code~other)
+* RepoSense Link: [here](https://nus-cs2103-ay2223s2.github.io/tp-dashboard/?search=nevinlim&breakdown=true&sort=groupTitle&sortWithin=title&since=2023-02-17&timeframe=commit&mergegroup=&groupSelect=groupByRepos&checkedFileTypes=docs~functional-code~test-code~other) 
 
 
 ## <ins>Enhancements implemented: </ins>
@@ -23,14 +23,14 @@
   * ***Implementation of Drug command classes for Drug subsystem:***
     * Created `DeleteCommand`, `FindCommand`, `ListCommand`, `UpdateCommand` and helped implement `AddCommand`,
     `ClearCommand` in `drugcommands` 
-    * Implemented the constructor and `execute` methods for the aforementioned classes
+    * Implemented the constructor and `execute` methods for the aforementioned classes 
     as well as exception handling and respective usage messages.
   * ***Implementation of Drug command Parser classes for the Drug subsystem:***
     * Created `AddCommandParser`, `DeleteCommandParser`, `FindCommandParser` and `UpdateCommandParser`classes
     in `drugparser` 
     * Implemented the `parse` method for the aforementioned classes to handle the user inputs as well as various parsing 
-    methods for the Drug Parser classes such as `parseTradeName`, `parseActiveIngredient`, `parseDirection`, `parsePurpose`,
-    `parseSideEffect` and `parseStorageCount` to parse user inputs into the necessary Objects that the respective Drug
+    methods for the Drug Parser classes such as `parseTradeName`, `parseActiveIngredient`, `parseDirection`, `parsePurpose`, 
+    `parseSideEffect` and `parseStorageCount` to parse user inputs into the necessary Objects that the respective Drug 
     Command requires.
 
 ## <ins>Contributions to the UG: </ins>
